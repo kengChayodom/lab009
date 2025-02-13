@@ -61,4 +61,20 @@ docker run -p 3000:3000 kengchayodom/nuxt-movie
 ![image](https://github.com/user-attachments/assets/13910b5a-a975-4e6e-948e-50bde420d88d)
 
 
+5.
+
+npm install -g pnpm
+pnpm install
+pnpm build
+docker build -t kengchayodom/vue3-realworld .
+docker push kengchayodom/vue3-realworld
+
+connect VM
+
+docker pull kengchayodom/vue3-realworld
+docker run -p 8080:80 kengchayodom/vue3-realworld
+
+![image](https://github.com/user-attachments/assets/285ef527-9c21-4ddb-8b89-c34997aac65e)
+
+
 
